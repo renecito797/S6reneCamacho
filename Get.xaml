@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S6reneCamacho.Get">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Consumir WS"></Label>
+            <Label x:Name="Texto" Text=""></Label>
+            <Button Text="Consultar" x:Name="btnget" Clicked="btnget_Clicked"></Button>
+
+            <ListView x:Name="mylistview">
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label x:Name="lblnombre" Text="{Binding nombre}">
+                           
+                                </Label>
+
+                                <Label x:Name="lblapellido" Text="{Binding apellido}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

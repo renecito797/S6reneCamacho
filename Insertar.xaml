@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S6reneCamacho.Insertar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txtCodigo" Placeholder="Ingrese codigo"></Entry>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese nombre"></Entry>
+            <Entry x:Name="txtApellido" Placeholder="Ingrese apellido"></Entry>
+            <Entry x:Name="txtEdad" Placeholder="Ingrese edad"></Entry>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="INSERTAR" Text="INSERTAR" Clicked="INSERTAR_Clicked" Grid.Row="0" Grid.Column="1"></Button>
+                <Button x:Name="REGRESAR" Text="Regresar" Clicked="REGRESAR_Clicked" Grid.Row="1" Grid.Column="1"></Button>
+                
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
